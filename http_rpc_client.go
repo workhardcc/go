@@ -22,7 +22,7 @@ type Delete struct {
 }
 
 func rpc_clinet(cpu int, mem int, disk int) int {
-	client, err := rpc.DialHTTP("tcp", "10.10.34.89:5978")
+	client, err := rpc.DialHTTP("tcp", "10.x.x.x:1111")
 	if err != nil {
 		fmt.Println("Dialerror" + err.Error())
 	}
@@ -37,7 +37,7 @@ func rpc_clinet(cpu int, mem int, disk int) int {
 	return reply
 }
 func rpc_client_create(cpu int, mem int, disk int) bool {
-	client, err := rpc.DialHTTP("tcp", "10.10.34.89:5978")
+	client, err := rpc.DialHTTP("tcp", "10.x.x.x:1111")
 	if err != nil {
 		fmt.Println("Dialerror" + err.Error())
 	}
